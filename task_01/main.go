@@ -17,8 +17,7 @@ func main() {
 }
 
 func dirTree(out *bytes.Buffer, path string, printFiles bool) (err error) {
-	i := 0
-	out.WriteString(printDir(path, i, printFiles, false, false))
+	out.WriteString(printDir(path, 0, printFiles, false, false))
     return err
 }
 
